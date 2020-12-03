@@ -1,7 +1,10 @@
-import Layout from '../components/Layout'
+import Layout from '../containers/Layout'
+import App from '../containers/App'
 
 export default function Home() {
   return (
-    <Layout>main</Layout>
+    <Layout>
+      <App/>
+    </Layout>
   )
 }
