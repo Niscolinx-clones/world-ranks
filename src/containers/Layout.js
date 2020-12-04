@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {Hello as Logo} from '../assets/Logo.svg'
 
 export default ({children}) => {
     return (
@@ -7,6 +8,10 @@ export default ({children}) => {
                 <title>World ranks</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
+
+            <header>
+             {Logo}
+            </header>
 
             <main className='main'>{children}</main>
 
