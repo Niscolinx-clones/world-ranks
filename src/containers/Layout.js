@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import {Hello as Logo} from '../assets/Logo.svg'
 
 export default ({children}) => {
     return (
@@ -10,7 +9,7 @@ export default ({children}) => {
             </Head>
 
             <header>
-             {Logo}
+             <img src='./Logo.svg' alt=''/>
             </header>
 
             <main className='main'>{children}</main>
