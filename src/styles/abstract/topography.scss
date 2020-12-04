@@ -1,12 +1,18 @@
 .container{
+    height: 100vh;
+    padding: 2rem;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
-.main{
-    height: 100vh;
+.header{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .footer{
 
+    text-align: center;
+    margin-top: 2rem;
 }

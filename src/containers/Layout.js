@@ -8,7 +8,7 @@ export default ({children}) => {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <header>
+            <header className='header'>
              <img src='./Logo.svg' alt=''/>
             </header>
 
