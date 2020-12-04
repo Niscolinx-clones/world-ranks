@@ -1,5 +1,14 @@
-const Home = ({countries}) => {
-    console.log('the coutries', countries)
+import React, {useEffect} from 'react'
+
+export default (props) => {
+
+    // useEffect( async () => {
+    //      const req = await fetch('https://restcountries.eu/rest/v2/all')
+    // const countries = await req.json()
+
+    // console.log('useEffect', countries)
+    // }, [])
+    console.log('the coutries', props)
     return (
         <div>
             The Home
@@ -7,16 +16,14 @@ const Home = ({countries}) => {
     )
 }
 
-export const getStaticProps = async () => {
-    const req = await fetch('https://restcountries.eu/rest/v2/all')
-    const res = await req.json()
+export const getInitialProps =  (any) => {
+    // const req = await fetch('https://restcountries.eu/rest/v2/all')
+    // const countries = await req.json()
+
 
     return {
-        props: {
-            countries: res
-        }
+       name: 'Collins'
     }
     
 }
 
-export default Home
