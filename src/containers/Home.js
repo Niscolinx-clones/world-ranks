@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 
-export default (props) => {
+export default ({countries}) => {
 
     // useEffect( async () => {
     //      const req = await fetch('https://restcountries.eu/rest/v2/all')
@@ -8,7 +8,7 @@ export default (props) => {
 
     // console.log('useEffect', countries)
     // }, [])
-    console.log('the coutries', props)
+    console.log('the coutries', countries)
     return (
         <div>
             The Home
@@ -16,14 +16,5 @@ export default (props) => {
     )
 }
 
-export const getInitialProps =  (any) => {
-    // const req = await fetch('https://restcountries.eu/rest/v2/all')
-    // const countries = await req.json()
 
-
-    return {
-       name: 'Collins'
-    }
-    
-}
 

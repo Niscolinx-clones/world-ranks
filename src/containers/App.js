@@ -1,9 +1,10 @@
 import Home from './Home'
 
-const App = () => {
+const App = ({countries}) => {
+    console.log('the countries', countries)
     return (
         <div className='home'>
-            <Home />
+            <Home countries={countries}/>
         </div>
     )
 }

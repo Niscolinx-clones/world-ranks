@@ -1,18 +1,21 @@
 import Layout from '../containers/Layout'
 import App from '../containers/App'
 
-export default function Home(props) {
-  console.log('the home props', props)
+export default function Home({countries}) {
   return (
     <Layout>
-      <App/>
+      <App countries={countries}/>
     </Layout>
   )
 }
 
-export const getStaticProps = (any) => {
-  console.log('any', any)
-  return {
-    name: 'Collins'
-  }
+export const getStaticProps = async (any) => {
+     const req = await fetch('https://restcountries.eu/rest/v2/all')
+     const countries = await req.json()
+
+    return {
+      props: {
+        countries
+      }
+    }
 }
