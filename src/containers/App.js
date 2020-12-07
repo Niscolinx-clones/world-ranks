@@ -1,8 +1,8 @@
 import Home from './Home'
 
 const App = ({countries}) => {
-    console.log('the countries', countries)
     return (
+        //About to add react contect
         <div className='home'>
             <Home countries={countries}/>
         </div>
